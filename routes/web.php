@@ -9,24 +9,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-// Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/home', 'DashboardController');
-Route::get('/addClient', 'DashboardController');
-Route::get('/clients', 'DashboardController');
-Route::get('/editClient', 'DashboardController');
-
-//Endpoint
-
-
-Route::get('/getClients', 'HomeController@getClients');
-Route::get('/getActivites', 'HomeController@getActivites');
-Route::post('/saveClient', 'HomeController@saveClient');
-Route::post('/updateClient', 'HomeController@updateClient');
-Route::post('/changeStatus', 'HomeController@changeStatus');
-Route::post('/deleteClients', 'HomeController@deleteClients');
-Route::post('/removeClient', 'HomeController@deleteClient');
-
 
 
 Route::get('reset', function () {
